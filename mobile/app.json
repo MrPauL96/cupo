@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Cupo",
+    "slug": "cupo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Cupo usa tu ubicación para recomendarte dónde parquear cerca."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO"
+      ],
+      "package": "co.cupo.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "PON_AQUI_TU_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Cupo usa el micrófono para que le digas a dónde vas sin soltar el timón.",
+          "speechRecognitionPermission": "Cupo convierte tu voz en texto para entender a dónde vas."
+        }
+      ]
+    ]
+  }
+}

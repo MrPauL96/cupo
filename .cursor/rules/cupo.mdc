@@ -1,0 +1,5 @@
+---
+description: Contexto del proyecto Cupo (Spring Boot + Expo)
+alwaysApply: true
+---
+Lee AGENTS.md en la raíz (y mobile/AGENTS.md para la app) antes de cambiar código.
